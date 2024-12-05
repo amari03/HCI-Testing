@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Main Menu</h1>
+    <div class="menu-bar">
+      <button class="menu-toggle" onclick="goToMainMenu()">☰</button>
+  </div>
+  </header>
+
+  <section class="meal-selector">
+    <label for="meal-type">Select Meal</label>
+    <select id="meal-type">
+      <option value="appetizers">Appetizers</option>
+      <option value="lunch">Lunch</option>
+      <option value="breakfast">Breakfast</option>
+      <option value="dessert">Dessert</option>
+    </select>
+  </section>
+
+  <section class="filter">
+    <span data-protein="chicken">Chicken</span>
+    <span data-protein="beef">Beef</span>
+    <span data-protein="pork">Pork</span>
+    <span data-protein="vegetarian">Vegetarian</span>
+  </section>
+
+  <section class="menu">
+    <!-- Menu items will be loaded here dynamically -->
+  </section>
+  <script src="activity.js"></script>
+  <script>
+    // The hamburger menu toggle function (for reference, if needed)
+    function goToMainMenu() {
+            window.location.href = 'mainmenu.html'; // Navigate to the main menu page
+        }
+  </script>
+</body>
+</html>
